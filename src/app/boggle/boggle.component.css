@@ -1,0 +1,64 @@
+#board {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    table-layout: fixed;
+    height: 320px;
+    width: 320px;
+
+    text-align: center;
+    margin-top: 70px;
+
+    background-color: whitesmoke;
+    font-size: x-large;
+    color: black;
+}
+
+#scoreContainer {
+    text-align: center;
+    border: 3ps solid orange;
+    font-size: x-large;
+
+}
+
+#submit{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: orange;
+    border: none;
+    padding: 15px 32px;
+    font-size: large;
+
+}
+
+
+
+#tableContainer, #buttonContainer, #wordContainer{
+    display: inline-block;
+    width: 33%;
+    height: 500px;
+    border: 3px solid orange;
+    position: relative;
+    margin-top: 50px;
+}
+
+#buttonContainer {
+    float: left;
+}
+
+#wordContainer{
+    float:right;
+    font-size: xx-large;
+}
+

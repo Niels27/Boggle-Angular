@@ -1,0 +1,16 @@
+<div id="scoreContainer">Score: {{score}}</div>
+<div id=buttonContainer>
+    <button id="submit" (click)="onSubmit()">Submit</button>
+</div>
+<div id="tableContainer">
+    <table class="center" id="board" border="1">
+        <tr *ngFor="let die of dice; let x = index">
+            <td *ngFor="let die of dice; let y = index">
+                <app-die (letterClickEvent)="addLetter($event)" [die]="dice[x][y]"></app-die>
+            </td>
+        </tr>
+    </table>
+</div>
+<div id="wordContainer"> WORDLIST:
+    <div  *ngFor="let word of words">{{word}}</div>
+</div>
