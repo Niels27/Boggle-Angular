@@ -8,9 +8,9 @@ describe('BoggleComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ BoggleComponent ]
+      declarations: [BoggleComponent]
     })
-    .compileComponents();
+      .compileComponents();
 
     fixture = TestBed.createComponent(BoggleComponent);
     component = fixture.componentInstance;
