@@ -1,42 +1,40 @@
 #board {
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
 
     margin-left: auto;
     margin-right: auto;
-
-    table-layout: fixed;
+    table-layout: relative;
     height: 320px;
     width: 320px;
 
     text-align: center;
     margin-top: 70px;
-
+    right:30%;
+    top:17%;
+    float:right;
+    position:relative;
     background-color: whitesmoke;
     font-size: x-large;
     color: black;
 }
 
-#scoreContainer {
+#scoreContainer, #timeContainer {
     text-align: center;
-    border: 3ps solid orange;
-    font-size: x-large;
+    font-size: 20px;
+    border: 3px solid rgb(0, 0, 0);
+    background-color: rgba(40, 88, 117, 0.21);
 
 }
 
-#submit{
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
+#submit, #reset, #start{
+    
+    position: relative;
+    display: inline-block;
+    top: 110%;
+    right: -125%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    background-color: orange;
-    border: none;
+    background-color: rgba(42, 80, 170, 0.201);
+    border:1px solid black;
     padding: 15px 32px;
     font-size: large;
 
@@ -48,7 +46,6 @@
     display: inline-block;
     width: 33%;
     height: 500px;
-    border: 3px solid orange;
     position: relative;
     margin-top: 50px;
 }
@@ -58,7 +55,38 @@
 }
 
 #wordContainer{
+    margin: 0;
+    bottom:300px;
+    right: 8%;
+    font-size: 20px;
+    border: 3px solid rgb(0, 0, 0);
+    background-color: rgba(40, 88, 117, 0.21);
+    display: inline-block;
+    width: 20%;
+    height: 400px;
+    position: relative;
+    margin-top: 50px;
+}
+#scoresContainer{
     float:right;
-    font-size: xx-large;
+    bottom:756px;
+    font-size: 20px;
+    border: 3px solid rgb(0, 0, 0);
+    background-color: rgba(40, 88, 117, 0.21);
+    display: inline-block;
+    width: 20%;
+    height: 400px;
+    position: relative;
+    margin-top: 50px;
+}
+#title{
+    font-size:70px;
+    position: absolute;
+    display: inline-block;
+    top: 10%;
+    right: 48%;
+}
+#title,#scoresContainer,#wordContainer,#tableContainer, #buttonContainer, #board{
+    
 }
 

@@ -1,8 +1,14 @@
+<h1 id="title">Boggle</h1>
 <div id="scoreContainer">Score: {{score}}</div>
+<div id="timeContainer">Time: {{timer}}</div>
 <div id=buttonContainer>
+    <button id="start" (click)="onStart()">Start</button>
+    <button id="reset" (click)="onReset()">Reset</button>
     <button id="submit" (click)="onSubmit()">Submit</button>
+    
 </div>
 <div id="tableContainer">
+    
     <table class="center" id="board" border="1">
         <tr *ngFor="let die of dice; let x = index">
             <td *ngFor="let die of dice; let y = index">
@@ -11,6 +17,9 @@
         </tr>
     </table>
 </div>
-<div id="wordContainer"> WORDLIST:
+<div id="wordContainer"> Words found:<br/><br/>
     <div  *ngFor="let word of words">{{word}}</div>
+</div>
+<div id="scoresContainer"> Scores:<br/><br/>
+    <div  *ngFor="let score of scores">{{score}}</div>
 </div>
