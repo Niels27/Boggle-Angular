@@ -64,11 +64,11 @@
     display: inline-block;
     width: 20%;
     height: 396px;
-    position: relative;
-    margin-top: 50px;
+    position: absolute;
+    top: 28%;
 }
 #scoresContainer{
-    float:right;
+    float:left;
     bottom:756px;
     font-size: 20px;
     border: 3px solid rgb(0, 0, 0);
@@ -76,8 +76,9 @@
     display: inline-block;
     width: 20%;
     height: 396px;
-    position: relative;
-    margin-top: 55px;
+    position: absolute;
+    top: 28%;
+    right: 75%;
 }
 #title{
     font-size:70px;
@@ -86,7 +87,5 @@
     top: 10%;
     right: 48%;
 }
-#title,#scoresContainer,#wordContainer,#tableContainer, #buttonContainer, #board{
-    
-}
+
 
