@@ -4,10 +4,10 @@ import { Subscription } from 'rxjs'
 import { Die } from '../die'
 
 @Component({
-
+  selector: 'app-die',
   templateUrl: './die.component.html',
   styleUrls: ['./die.component.css'],
-  selector: 'app-die',
+
 })
 
 export class DieComponent implements OnInit {

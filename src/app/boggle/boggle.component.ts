@@ -22,7 +22,7 @@ export class BoggleComponent implements OnInit {
   score: number = 0;
   scores: string[] = [];
   playerName: string | null = "";
-  gameTime: number = 10; //should be 180
+  gameTime: number = 60; //should be 180
   intervalId: NodeJS.Timer | undefined;
   @ViewChild('board') board!: ElementRef;
 
@@ -129,6 +129,9 @@ export class BoggleComponent implements OnInit {
     this.dice = [];
     this.startTimer(this.gameTime);
   }
+
+
 }
+
 
 
